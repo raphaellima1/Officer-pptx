@@ -43,3 +43,7 @@ source( encoding = 'UTF-8', file = 'PROTEGE.R')
 setwd("./pptx/")
 # IPVA E ITCD
 source( encoding = 'UTF-8', file = 'IPVA_ITCD.R')
+
+setwd("./pptx/")
+# IPVA E ITCD
+source( encoding = 'UTF-8', file = 'RECEITA.R')
