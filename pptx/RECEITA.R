@@ -4,7 +4,7 @@ setwd('C:/Users/raphael.lima/Documents/Trabalhos/Trabalhos em R/1 - ICMS')
 setwd("./Tabela/")
 
 # rodar as tabela para totais
-source('RECEITAS_2022.R')
+source( encoding = 'UTF-8', file = 'RECEITAS_2022.R')
 
 # DESCOBRIR A ULTIMA ATUALIZAÇÃO
 ult_atu <- max(receitas$data)
@@ -62,7 +62,7 @@ my <- read_pptx('blank.pptx') %>%
 ############################ tabela com a porcentagem de cada setor ############
 
 setwd("./Flextable/")
-source('table_setor_receitas.R')
+source( encoding = 'UTF-8', file = 'table_setor_receitas.R')
 
 
 my <- my %>%
@@ -119,7 +119,7 @@ rm(table, table_setor)
 # Entrar na pastas de graficos
 setwd("./Gráficos/")
 # rodar o grafico de linhas
-source('geom_line.R')
+source( encoding = 'UTF-8', file = 'geom_line.R')
 
 p <- p+1
 
@@ -183,7 +183,7 @@ rm(df_dia, fig1, tabela_dia)
 ########################## grafico variação ####################################
 # Entrar na pastas de graficos
 setwd("./Gráficos/")
-source('geom_line_var.R')
+source( encoding = 'UTF-8', file = 'geom_line_var.R')
 
 p <- p+1  
 g <- g+1
@@ -246,7 +246,7 @@ my <- my %>%
 ########################## grafico barras ######################################
 # Entrar na pastas de graficos
 setwd("./Gráficos/")
-source('geom bar.R')
+source( encoding = 'UTF-8', file = 'geom bar.R')
 
 p <- p+1
 g <- g+1
@@ -306,7 +306,7 @@ my <- my %>%
 
 ################################################################################
 setwd("./Flextable/")
-source('tabela acumulada.R')
+source( encoding = 'UTF-8', file = 'tabela acumulada.R')
 
 p <- p+1
 t <- t+1
@@ -363,7 +363,7 @@ my <- my %>%
 
 ################################################################################
 setwd("./Flextable/")
-source('tabela real.R')
+source( encoding = 'UTF-8', file = 'tabela real.R')
 
 t <- t+1
 p <- p+1
@@ -431,7 +431,7 @@ my <- my %>%
 ################################################################################
 
 setwd("./Flextable/")
-source('tabela_variacao_receitas.R')
+source( encoding = 'UTF-8', file = 'tabela_variacao_receitas.R')
 
 
 p <- p+1 
@@ -489,7 +489,7 @@ my <- my %>%
 
 ################################################################################
 setwd("./Flextable/")
-source('cat_tab_real_receitas.R')
+source( encoding = 'UTF-8', file = 'cat_tab_real_receitas.R')
 
 
 p <- p+1 
@@ -558,7 +558,7 @@ my <- my %>%
 ################################################################################
 
 setwd("./Gráficos/")
-source('grafico_dia.R')
+source( encoding = 'UTF-8', file = 'grafico_dia.R')
 
 
 p <- p+1 
@@ -619,7 +619,7 @@ my <- my %>%
 # são os graficos gerados em 4 plots
 
 setwd("./Gráficos/")
-source('plots_mensal_receitas.R')
+source( encoding = 'UTF-8', file = 'plots_mensal_receitas.R')
 
 ################################################################################
 
