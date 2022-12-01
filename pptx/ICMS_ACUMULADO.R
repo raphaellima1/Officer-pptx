@@ -3,7 +3,7 @@ setwd('./../')
 setwd("./Tabela/")
 
 # rodar as tabela para totais
-source('ICMS_TOTAL_2022.R')
+source( encoding = 'UTF-8', file = 'ICMS_TOTAL_2022.R')
 
 # definir o primeiro grupo - TOTAIS
 grupo <- variaveis[1]
@@ -67,7 +67,7 @@ my <- read_pptx('blank.pptx') %>%
 ############################ tabela com a porcentagem de cada setor ############
 
 setwd("./Flextable/")
-source('table_setor.R')
+source( encoding = 'UTF-8', file = 'table_setor.R')
 
 
 my <- my %>%
@@ -124,7 +124,7 @@ rm(table, table_setor)
 # Entrar na pastas de graficos
 setwd("./Gráficos/")
 # rodar o grafico de linhas
-source('geom_line.R')
+source( encoding = 'UTF-8', file = 'geom_line.R')
 
 p <- p+1
 
@@ -188,7 +188,7 @@ rm(df_dia, fig1, tabela_dia)
 ########################## grafico variação ####################################
 # Entrar na pastas de graficos
 setwd("./Gráficos/")
-source('geom_line_var.R')
+source( encoding = 'UTF-8', file = 'geom_line_var.R')
 
 p <- p+1  
 g <- g+1
@@ -251,7 +251,7 @@ my <- my %>%
 ########################## grafico barras ######################################
 # Entrar na pastas de graficos
 setwd("./Gráficos/")
-source('geom bar.R')
+source( encoding = 'UTF-8', file = 'geom bar.R')
 
 p <- p+1
 g <- g+1
@@ -311,7 +311,7 @@ my <- my %>%
 
 ################################################################################
 setwd("./Flextable/")
-source('tabela acumulada.R')
+source( encoding = 'UTF-8', file = 'tabela acumulada.R')
 
 p <- p+1
 t <- t+1
@@ -368,7 +368,7 @@ my <- my %>%
 
 ################################################################################
 setwd("./Flextable/")
-source('tabela real.R')
+source( encoding = 'UTF-8', file = 'tabela real.R')
 
 t <- t+1
 p <- p+1
@@ -435,7 +435,7 @@ my <- my %>%
                                  height = 0.3))
 ################################################################################
 setwd("./Flextable/")
-source('tabela_variacao.R')
+source( encoding = 'UTF-8', file = 'tabela_variacao.R')
 
 
 p <- p+1 
@@ -493,7 +493,7 @@ my <- my %>%
 
 ################################################################################
 setwd("./Flextable/")
-source('cat_tab_real.R')
+source( encoding = 'UTF-8', file = 'cat_tab_real.R')
 
 
 p <- p+1 
@@ -561,7 +561,7 @@ my <- my %>%
 
 ################################################################################
 setwd("./Gráficos/")
-source('grafico_dia.R')
+source( encoding = 'UTF-8', file = 'grafico_dia.R')
 
 
 p <- p+1 
@@ -621,7 +621,7 @@ my <- my %>%
 # são os graficos gerados em 4 plots
 
 setwd("./Gráficos/")
-source('plots_mensal.R')
+source( encoding = 'UTF-8', file = 'plots_mensal.R')
 
 ################################################################################
 # loop para cada categoria
@@ -632,7 +632,7 @@ for (i in 2:11) {
   
   #rodar a table principal para
   setwd("./Tabela/")
-  source('tranformacao_tables19_a_22.R')
+  source( encoding = 'UTF-8', file = 'tranformacao_tables19_a_22.R')
   
 
   
@@ -648,10 +648,10 @@ for (i in 2:11) {
   # Entrar na pastas de graficos
   setwd("./Gráficos/")
   # rodar o grafico de linhas
-  source('geom_line.R')
+  source( encoding = 'UTF-8', file = 'geom_line.R')
   # Entrar na pasta de flextable
   setwd("./Flextable/")
-  source('tabela diaria.R')
+  source( encoding = 'UTF-8', file = 'tabela diaria.R')
   
   my <- my %>%
     add_slide(layout = "Título e conteúdo", master = "Tema do Office") %>% 
@@ -713,7 +713,7 @@ for (i in 2:11) {
   ########################## grafico variação ####################################
   # Entrar na pastas de graficos
   setwd("./Gráficos/")
-  source('geom_line_var.R')
+  source( encoding = 'UTF-8', file = 'geom_line_var.R')
   
   p <- p+1  
   g <- g+1
@@ -776,7 +776,7 @@ for (i in 2:11) {
   ########################## grafico barras ######################################
   # Entrar na pastas de graficos
   setwd("./Gráficos/")
-  source('geom bar.R')
+  source( encoding = 'UTF-8', file = 'geom bar.R')
   
   p <- p+1
   g <- g+1
@@ -836,7 +836,7 @@ for (i in 2:11) {
   # Tabela
   ############################################################
   setwd("./Flextable/")
-  source('tabela acumulada.R')
+  source( encoding = 'UTF-8', file = 'tabela acumulada.R')
   p <- p+1
   
   my <- my %>%
@@ -894,7 +894,7 @@ for (i in 2:11) {
   # Tabela valores reais
   ################################################################################
   setwd("./Flextable/")
-  source('tabela real.R')
+  source( encoding = 'UTF-8', file = 'tabela real.R')
   
   t <- t+1
   p <- p+1
@@ -964,7 +964,7 @@ for (i in 2:11) {
 
   ################################################################################
   setwd("./Gráficos/")
-  source('grafico_dia.R')
+  source( encoding = 'UTF-8', file = 'grafico_dia.R')
   
   
   
@@ -1026,7 +1026,7 @@ for (i in 2:11) {
   # são os graficos gerados em 4 plots
   
   setwd("./Gráficos/")
-  source('plots_mensal.R')
+  source( encoding = 'UTF-8', file = 'plots_mensal.R')
 }
 
 my %>%

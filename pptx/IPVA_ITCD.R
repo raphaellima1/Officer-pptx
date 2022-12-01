@@ -5,7 +5,7 @@ setwd("./Tabela/")
 
 
 
-source('IPVA.R')
+source(encoding = 'UTF-8', file = 'IPVA.R')
 
 
 ult_atu <- max(ICMS_table20$data)
@@ -56,7 +56,7 @@ my <- read_pptx('blank.pptx') %>%
 # Entrar na pastas de graficos
 setwd("./Gráficos/")
 # rodar o grafico de linhas
-source('geom_line.R')
+source( encoding = 'UTF-8', file = 'geom_line.R')
 
 s <- 1
 g <- 1
@@ -121,7 +121,7 @@ my <- my %>%
 ########################## grafico variação ####################################
 # Entrar na pastas de graficos
 setwd("./Gráficos/")
-source('geom_line_var.R')
+source( encoding = 'UTF-8', file = 'geom_line_var.R')
 
 p <- p+1  
 g <- g+1
@@ -184,7 +184,7 @@ my <- my %>%
 ########################## grafico barras ######################################
 # Entrar na pastas de graficos
 setwd("./Gráficos/")
-source('geom bar.R')
+source( encoding = 'UTF-8', file = 'geom bar.R')
 
 p <- p+1
 g <- g+1
@@ -244,7 +244,7 @@ my <- my %>%
 
 ################################################################################
 setwd("./Flextable/")
-source('tabela acumulada.R')
+source( encoding = 'UTF-8', file = 'tabela acumulada.R')
 
 p <- p+1
 
@@ -301,7 +301,7 @@ my <- my %>%
 
 ################################################################################
 setwd("./Flextable/")
-source('tabela real.R')
+source( encoding = 'UTF-8', file = 'tabela real.R')
 
 t <- t+1
 p <- p+1
@@ -369,7 +369,7 @@ my <- my %>%
 
 ################################################################################
 setwd("./Gráficos/")
-source('grafico_dia.R')
+source( encoding = 'UTF-8', file = 'grafico_dia.R')
 
 
 p <- p+1 
@@ -432,11 +432,11 @@ my <- my %>%
 # são os graficos gerados em 4 plots
 
 setwd("./Gráficos/")
-source('plots_mensalIP.R')
+source( encoding = 'UTF-8', file = 'plots_mensalIP.R')
 
 ################################################################################
 setwd("./Tabela/")
-source('ITCD.R')
+source( encoding = 'UTF-8', file = 'ITCD.R')
 
 
 ult_atu <- max(ICMS_table20$data)
@@ -448,10 +448,10 @@ ult_atu1 <- format(ult_atu, "%d/%m/%y")
 # Entrar na pastas de graficos
 setwd("./Gráficos/")
 # rodar o grafico de linhas
-source('geom_line.R')
+source( encoding = 'UTF-8', file = 'geom_line.R')
 # Entrar na pasta de flextable
 setwd("./Flextable/")
-source('tabela diaria.R')
+source( encoding = 'UTF-8', file = 'tabela diaria.R')
 
 
 ################################################################################
@@ -519,7 +519,7 @@ my <- my %>%
 ########################## grafico variação ####################################
 # Entrar na pastas de graficos
 setwd("./Gráficos/")
-source('geom_line_var.R')
+source( encoding = 'UTF-8', file = 'geom_line_var.R')
 
 p <- p+1  
 g <- g+1
@@ -581,7 +581,7 @@ my <- my %>%
 ########################## grafico barras ######################################
 # Entrar na pastas de graficos
 setwd("./Gráficos/")
-source('geom bar.R')
+source( encoding = 'UTF-8', file = 'geom bar.R')
 
 p <- p+1
 g <- g+1
@@ -641,7 +641,7 @@ my <- my %>%
 # Tabela
 ############################################################
 setwd("./Flextable/")
-source('tabela acumulada.R')
+source( encoding = 'UTF-8', file = 'tabela acumulada.R')
 
 p <- p+1
 t <- 1
@@ -698,7 +698,7 @@ my <- my %>%
 # Tabela valores reais
 ################################################################################
 setwd("./Flextable/")
-source('tabela real.R')
+source( encoding = 'UTF-8', file = 'tabela real.R')
 
 t <- t+1
 p <- p+1
@@ -767,7 +767,7 @@ my <- my %>%
 
 ################################################################################
 setwd("./Gráficos/")
-source('grafico_dia.R')
+source( encoding = 'UTF-8', file = 'grafico_dia.R')
 
 
 p <- p+1 
@@ -828,7 +828,7 @@ my <- my %>%
 # são os graficos gerados em 4 plots
 
 setwd("./Gráficos/")
-source('plots_mensalIT.R')
+source( encoding = 'UTF-8', file = 'plots_mensalIT.R')
 
 my %>% 
 print(target = glue("{dia} - IPVA_ITCD.pptx")) %>% 

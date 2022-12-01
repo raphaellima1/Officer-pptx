@@ -25,7 +25,7 @@ variaveis <- c('TOTAL', "COMBUSTÍVEL", "COMÉRCIO ATACADISTA E DISTRIBUIDOR",
 
 
 
-setwd('C:/Users/raphael.lima/Documents/Trabalhos/Trabalhos em R/1 - ICMS')
+setwd('C:/Users/raphael.lima/Documents/Trabalhos/Trabalhos em R/Officer-pptx')
 
 setwd("./pptx/")
 
@@ -45,5 +45,5 @@ setwd("./pptx/")
 source( encoding = 'UTF-8', file = 'IPVA_ITCD.R')
 
 setwd("./pptx/")
-# IPVA E ITCD
+# Receita totais
 source( encoding = 'UTF-8', file = 'RECEITA.R')
