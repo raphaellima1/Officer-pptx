@@ -549,6 +549,25 @@ for (i in 9:12) {
                                      top = 1, 
                                      width = 6,88,
                                      height = 3,34))  
+  }else if(i == 11){
+    
+    
+    #figura 1
+    my <- my %>%
+      ph_with(dml(code = plot(grafico_dia)), 
+              location = ph_location(left = 0.5, 
+                                     top = 4.0, 
+                                     width = 6,88,
+                                     height = 3,34))
+    
+  }else {
+    #figura 1
+    my <- my %>%
+      ph_with(dml(code = plot(grafico_dia)), 
+              location = ph_location(left = 7.1, 
+                                     top = 4.0, 
+                                     width = 6,88,
+                                     height = 3,34))  
   }
 }
 
